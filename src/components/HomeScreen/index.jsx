@@ -1,7 +1,7 @@
 import Button from '../Button';
 import { Div } from './style';
 
-function HomeScreen() {
+function HomeScreen({ onClick }) {
     return(
         <Div>
             <header>
@@ -9,7 +9,7 @@ function HomeScreen() {
             </header>
 
             <main>
-                <Button onClick={() => null}>Start</Button>
+                <Button onClick={onClick}>Start</Button>
             </main>
         </Div>
     );
