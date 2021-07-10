@@ -54,12 +54,12 @@ function StudentsScreen({ studentsList }) {
                     <Student img={studentsList[drawn[1]].image}
                              name={studentsList[drawn[1]].name}
                              house={studentsList[drawn[1]].house}
-                             patronus={studentsList[drawn[0]].patronus === "" ? "Null" : studentsList[drawn[0]].patronus} 
+                             patronus={studentsList[drawn[1]].patronus === "" ? "Null" : studentsList[drawn[1]].patronus} 
                     />
                     <Student img={studentsList[drawn[2]].image}
                              name={studentsList[drawn[2]].name}
                              house={studentsList[drawn[2]].house}
-                             patronus={studentsList[drawn[0]].patronus === "" ? "Null" : studentsList[drawn[0]].patronus} 
+                             patronus={studentsList[drawn[2]].patronus === "" ? "Null" : studentsList[drawn[2]].patronus} 
                     />
                 </div>
                 
