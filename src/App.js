@@ -1,8 +1,11 @@
 import './App.css';
+import HomeScreen from './components/HomeScreen';
 
 function App() {
     return(
-       <div></div>
+       <div>
+           <HomeScreen />
+       </div>
     );
 }
 
