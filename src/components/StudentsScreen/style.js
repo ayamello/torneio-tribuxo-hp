@@ -12,11 +12,11 @@ export const Div = styled.div `
     }
 
     h1 {
-        font-family: 'Qahiri';
-        font-size: 6em;
+        font-family: 'Architects Daughter';
+        font-size: 3em;
         text-transform: uppercase;
         color: #fff;
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
     }
 
     .Students {
@@ -24,8 +24,8 @@ export const Div = styled.div `
     }
 
     Button {
-        font-family: 'Josefin Sans';
-        font-size: 2em;
+        font-family: 'Architects Daughter';
+        font-size: 1.5em;
         margin: 5vh;
     }
 `;
