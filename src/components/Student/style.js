@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
 const Div = styled.div`
+    margin: 0 2vw;
+
     .Img {
+        width: 160px;
         margin: 0 2vw;
         padding: 2px 2px 0 2px;
         border-radius: 5px;
     }
     
     img {
-        width: 12vw;
+        width: 100%;
         height: 30vh;
         border-radius: 5px;
     }
@@ -25,6 +28,25 @@ const Div = styled.div`
         .Infos .House {
             margin: 1vh 0;
         }
+
+    @media screen and (max-width: 767px) {
+        .Img {
+            width: 160px;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+            height: 30vh;
+            border-radius: 5px;
+        }
+        .Infos .House {
+            margin-bottom: 5vh;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        margin: 0 5vw;
+    }
 `;
 
 export const Gryffindor = styled(Div)`

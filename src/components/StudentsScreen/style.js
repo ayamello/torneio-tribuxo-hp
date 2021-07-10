@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Div = styled.div `
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +15,7 @@ export const Div = styled.div `
         font-size: 3em;
         text-transform: uppercase;
         color: #fff;
-        margin-bottom: 6vh;
+        margin: 6vh;
     }
 
     .Students {
@@ -27,5 +26,11 @@ export const Div = styled.div `
         font-family: 'Architects Daughter';
         font-size: 1.5em;
         margin: 5vh;
+    }
+
+    @media screen and (max-width: 699px) {
+        .Students {
+            flex-direction: column;
+        }
     }
 `;
