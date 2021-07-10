@@ -8,7 +8,7 @@ function App() {
     const [start, setStart] = useState(false);
 
     useEffect(() => {
-        fetch('http://hp-api.herokuapp.com/api/characters/students')
+        fetch('https://hp-api.herokuapp.com/api/characters/students')
         .then(res => res.json())
         .then(res => setStudentsList(res));
     }, []);
