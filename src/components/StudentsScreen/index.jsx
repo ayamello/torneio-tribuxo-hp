@@ -9,8 +9,23 @@ function StudentsScreen({ studentsList }) {
     
         while(results.length < 3) {
             const res = Math.floor(Math.random() * studentsList.length);
+            const house = studentsList[res].house;
+          
             if(results.indexOf(res) === -1) {
-                results.push(res);
+                if(results.length === 1) {
+                    if(studentsList[results[0]].house !== house) {
+                        results.push(res);
+                    }
+                }
+                else if(results.length === 2) {
+                    if(studentsList[results[0]].house !== house && studentsList[results[1]].house !== house) {
+                        results.push(res);
+                    }
+                }
+                else {
+                    results.push(res);
+                }
+                
             }
         }
         return results;
@@ -20,6 +35,7 @@ function StudentsScreen({ studentsList }) {
 
     function handleTryAgain() {
         setDrawn(drawStudent());
+        console.log(drawn)
     }
 
     return(

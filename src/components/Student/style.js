@@ -45,7 +45,7 @@ export const Slytherin = styled(Div)`
     }
 `;
 
-export const Hufflepuf = styled(Div)`
+export const Hufflepuff = styled(Div)`
     .Img {
         background-color: yellow;
     }

@@ -1,4 +1,4 @@
-import { Gryffindor, Slytherin, Hufflepuf, Ravenclaw } from './style';
+import { Gryffindor, Slytherin, Hufflepuff, Ravenclaw } from './style';
 
 function Student({img, name, house, patronus}) {
     if (house === "Gryffindor") {
@@ -31,9 +31,9 @@ function Student({img, name, house, patronus}) {
             </Slytherin>
         );
     }
-    else if (house === "Hufflepuf") {
+    else if (house === "Hufflepuff") {
         return(
-            <Hufflepuf>
+            <Hufflepuff>
                 <div className="Img">
                     <img src={img} alt={name} />
                 </div>
@@ -43,7 +43,7 @@ function Student({img, name, house, patronus}) {
                     <p>Patronus: {patronus}</p>
                     <p className="House" >{house}</p>
                 </div>
-            </Hufflepuf>
+            </Hufflepuff>
         );
     }
     else {
